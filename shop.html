@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a class="active" href="Shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <section id="page-headershop">
+        <h1>WELCOME TO <span>STEP</span> SHOP</h1>
+        <h3>Hứa hẹn đem lại những trải nghiệm mua sắm thú vị</h3>
+    </section>
+    <!-- Phần danh mục sản phẩm trang chủ -->
+    <!-- PRODUCTS -->
+    <section class="products section container">
+        <div class="filter-price">
+            <label for="cars">Sắp xếp:</label>
+            <select id="filter">
+                <option value="1" selected="selected">Giá từ Thấp -> Cao</option>
+                <option value="2">Giá từ Cao -> Thấp</option>
+            </select>
+        </div>
+
+        <!-- Best-seller -->
+        <div id="bestseller" class="khungsanpham active-content">
+            <!-- Box 1 -->
+            <div class="box" onclick="window.location.href='sproduct.html';">
+                <img src="imgtatcasanpham/sp19.png" alt="sanpham1">
+                <img src="imgtatcasanpham/sp19.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Terry Hoodie </h3>
+                <span>1.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (106 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="chitietsanpham.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box" onclick="window.location.href='sproduct2.html';">
+                <img src="imgtatcasanpham/sp20.png" alt="sanpham2">
+                <img src="imgtatcasanpham/sp20.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Nike Air Max 90 </h3>
+                <span> 3.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (30 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp21.png" alt="sanpham3">
+                <img src="imgtatcasanpham/sp21.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> LeBron T-Shirt </h3>
+                <span> 1.950.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp22.png" alt="sanpham4">
+                <img src="imgtatcasanpham/sp22.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Dunk Low SE </h3>
+                <span> 4.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp23.png" alt="sanpham5">
+                <img src="imgtatcasanpham/sp23.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Air Max Pulse Roam </h3>
+                <span> 4.255.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (46 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp24.png" alt="sanpham6">
+                <img src="imgtatcasanpham/sp24.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> Mini Backpack </h3>
+                <span> 2.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (45 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp25.png" alt="sanpham7">
+                <img src="imgtatcasanpham/sp25.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Sportswear Club Fleece </h3>
+                <span> 1.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (50 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp26.png" alt="sanpham8">
+                <img src="imgtatcasanpham/sp26.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Tie Dye Beanie </h3>
+                <span> 900.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp27.png" alt="sanpham9">
+                <img src="imgtatcasanpham/sp27.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Futura Wash Cap </h3>
+                <span> 1.000.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    <section id="pagination" class="products section container">
+        <a href="Shop.html" class="page-link active ">1</a>
+        <a href="Shop2.html" class="page-link">2</a>
+        <a href="Shop3.html" class="page-link">3</a>
+    </section>
+    <!-- Đăng ký thành viên -->
+    <section id="dangkythanhvien" class="section-p1">
+        <div class="khungthanhvien"></div>
+        <div class="dangky">
+            <h4> Đăng ký thành viên </h4>
+            <p> Hãy nhập email đăng ký để nhận ngay <span>voucher 20%.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Nhập email tại đây...">
+            <button class="dangky"> Đăng ký </button>
+        </div>
+    </section>
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+    <script src="./scripts/shop1.js"></script>
+</body>
+
+</html>

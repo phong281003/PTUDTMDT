@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .total-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- Phần Giao hàng -->
+    <section class="giaohang">
+        <div class="containergiaohang">
+            <div class="giaohang-top-wrap">
+                <div class="giaohang-top">
+                    <!-- Icon cart -->
+                    <div class="giaohang-top-giaohang giaohang-top-item">
+                        <i class='bx bx-cart-alt'></i>
+                    </div>
+                    <!-- Icon địa chỉ -->
+                    <div class="giaohang-top-adress giaohang-top-item">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <!-- Icon thanh toán -->
+                    <div class="giaohang-top-payment giaohang-top-item">
+                        <i class='bx bx-credit-card'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="giohang-content">
+                <div class="giohang-content-left">
+                    <!-- Shipping Form -->
+                    <form action="#" method="post">
+                        <h2>THÔNG TIN GIAO HÀNG</h2>
+                        <!-- Customer details -->
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <!-- City and District selection -->
+                        <div class="form-group">
+                            <label for="city">Tỉnh/Thành phố</label>
+                            <select id="city" name="city" onchange="updateDistricts();">
+                                <option value="">Chọn Thành phố</option>
+                                <option value="hcm">TP. Hồ Chí Minh</option>
+                                <option value="hanoi">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="district">Quận/Huyện</label>
+                            <select id="district" name="district" onchange="calculateShipping();">
+                                <!-- District options will be filled by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+
+                        <!-- Cart Summary -->
+                        <!-- ... your cart items display ... -->
+
+                        <!-- Shipping Cost Display -->
+                        <div class="form-group">
+                            <label for="shippingCost">Phí giao hàng</label>
+                            <input type="text" id="shippingCost" name="shippingCost" readonly>
+                        </div>
+
+                        <!-- Display cart items -->
+                        <div class="cart-items">
+                            <!-- Repeat for each cart item -->
+                            <div class="cart-item">
+                                <img src="imgsanphambestseller/sp1.png" alt="Product Image">
+                                <p>Terry Hoodie - Size: M, Số lượng: 1</p>
+                                <p>1.250.000<sub>đ</sub></p>
+                            </div>
+                            <div class="cart-item">
+                                <img src="imgsanphambestseller/sp2.png" alt="Product Image">
+                                <p>Nike Air Max 90 - Size: 39, Số lượng: 1</p>
+                                <p>3.500.000<sub>đ</sub></p>
+                            </div>
+                        </div>
+
+                        <div class="total-section">
+                            <!-- Totals -->
+                            <h3>Tổng tiền hàng</h3>
+                            <p>
+                                <span id="total-cost">4.750.000</span>
+                                <sub>đ</sub>
+                            </p>
+
+                            <h3>Tạm tính</h3>
+                            <p style="color:rgb(0, 0, 0); font-weight: bold;">
+                                <span id="subtotal-cost">4.750.000</span>
+                                <sub>đ</sub>
+                            </p>
+
+                            <!-- Thêm phần tử để hiển thị tổng giá trị đơn hàng -->
+                            <h3>Tổng giá trị đơn hàng</h3>
+                            <p>
+                                <span id="totalOrderValue">0</span><sub>đ</sub>
+                            </p>
+                        </div>
+
+                        <div class="form-actions">
+                            <a href="giohang.html" class="return-to-cart">
+                                <i class='bx bx-arrow-back'></i> Quay lại trang giỏ hàng
+                            </a>
+                            <a href="thanhtoan.html">
+                                <button type="button">Xác nhận thông tin và thanh toán</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+    <script src="./scripts/giaohang.js"></script>
+</body>
+
+</html>

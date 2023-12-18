@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- Phần Liên hệ -->
+    <section id="page-header" class="contact-header">
+    </section>
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>LIÊN HỆ</span>
+            <h2>Hãy ghé thăm cửa hàng của chúng tôi hoặc liên hệ với chúng tôi ngay hôm nay</h2>
+            <h3>Cửa hàng chính</h3>
+            <div>
+                <li>
+                    <i class='bx bxs-map'></i>
+                    <p>1360 Huỳnh Tấn Phát, Phường Tân Thuận, Quận 7, TPHCM</p>
+                </li>
+                <li>
+                    <i class='bx bxs-envelope'></i>
+                    <p>stepstyle@gmail.com</p>
+                </li>
+                <li>
+                    <i class='bx bxs-phone'></i>
+                    <p>0903 058 940</p>
+                </li>
+                <li>
+                    <i class='bx bxs-time'></i>
+                    <p>Thứ Hai đến Thứ Bảy, từ 8:00 đến 17:30</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0610711495146!2d106.73377777480415!3d10.729773189416136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175256f7686d0fb%3A0x2003e10300522b67!2zMTM2MCBIdeG7s25oIFThuqVuIFBow6F0LCBQaMO6IFRodeG6rW4sIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1702564902018!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="form-details">
+        <form action="">
+            <span>HÃY ĐỂ LẠI LỜI NHẮN</span>
+            <h2> Chúng tôi sẵn sàng trợ giúp và trả lời bất kỳ câu hỏi nào mà bạn có thể có. Hãy cho chúng tôi biết về
+                vấn đề của bạn để chúng tôi có thể trợ giúp bạn nhanh hơn. Chúng tôi mong chờ tin từ bạn.</h2>
+            <input type="text" placeholder="Họ và tên">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Chủ đề">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung"></textarea>
+            <button class="normal">Gửi ngay</button>
+        </form>
+        <div class="people">
+            <div>
+                <img src="imgadmin/admin1.jpg" alt="">
+                <p><span>Loan Tran</span> <br> Customer Service Manager <br> Phone: 0979 123 456 <br> Email:
+                    CSMloan@gmail.com </p>
+            </div>
+            <div>
+                <img src="imgadmin/admin2.jpg" alt="">
+                <p><span>Anh Dao</span> <br> Sales Manager <br> Phone: 0979 321 456 <br> Email: SManh@gmail.com </p>
+            </div>
+            <div>
+                <img src="imgadmin/admin3.jpg" alt="">
+                <p><span>Jennifer</span><br> Maketing Manager <br> Phone: 0979 697 769 <br> Email: MMjenni@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

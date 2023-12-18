@@ -1,0 +1,129 @@
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0;
+  }
+
+  header .nav.container {
+    flex-direction: row;
+    gap: 10px 0;
+    padding: 12px;
+  }
+
+  header .nav.container .navbar {
+    flex-direction: column;
+    gap: 4px 0;
+    align-items: center;
+  }
+
+  section#dangkythanhvien {
+    flex-direction: column;
+    padding: 12px 32px;
+  }
+
+  section#dangkythanhvien .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  #prodetails {
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 90%;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding: 32px 16px;
+  }
+
+  section.comment .comment-input {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  section.comment button {
+    width: 100%;
+  }
+
+  #prodetails .single-pro-details span pre {
+    width: 100%;
+    white-space: pre-wrap;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* header .nav.container ul.navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 2px 14px;
+  } */
+
+  header .nav.container ul.navbar a {
+  }
+
+  header .nav.container {
+    padding: 0;
+    gap: 2px 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  section#dangkythanhvien .form {
+    display: block;
+  }
+
+  section#dangkythanhvien .form button.dangky {
+    margin-top: 12px;
+    padding: 10px 20px;
+  }
+
+  /* .user i,
+  .cart i,
+  #search-icon,
+  .logo {
+    font-size: inherit;
+  } */
+}
+
+@media only screen and (max-width: 450px) {
+  #bannerkhuyenmai .banner-box {
+    min-width: 0;
+    width: 100%;
+  }
+
+  header .nav.container ul.navbar {
+    flex-direction: column;
+  }
+
+  header .nav.container ul.navbar a {
+  }
+
+  header .nav.container {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  section#dangkythanhvien .form {
+    display: block;
+  }
+
+  section#dangkythanhvien .form button.dangky {
+    margin-top: 12px;
+    padding: 10px 20px;
+  }
+
+  /* .user i,
+  .cart i,
+  #search-icon,
+  .logo {
+    font-size: inherit;
+  } */
+}

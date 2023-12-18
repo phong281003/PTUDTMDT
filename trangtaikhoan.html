@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="#cuahang">Cửa hàng</a></li>
+                <li><a href="#sale"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- Phần Account -->
+    <section class="accounts section-lg">
+        <div class="accounts__container container grid">
+            <div class="account__tabs">
+                <p class="account__tab" data-target="#dashboard">
+                    <i class="fas fa-sliders-h"></i> Dashboard
+                </p>
+
+                <p class="account__tab active-tab" data-target="#orders">
+                    <i class="fas fa-shopping-bag"></i> Đơn hàng
+                </p>
+
+                <p class="account__tab active-tab" data-target="#update-profile">
+                    <i class="fas fa-user"></i> Cập nhật thông tin
+                </p>
+
+                <p class="account__tab active-tab" data-target="#address">
+                    <i class="fas fa-map-marker-alt"></i> Địa chỉ của tôi
+                </p>
+
+                <p class="account__tab active-tab" data-target="#change-password">
+                    <i class="fas fa-user"></i> Thay đổi mật khẩu
+                </p>
+
+                <p class="account__tab active-tab">
+                    <i class="fas fa-sign-out-alt"></i>Đăng xuất
+                </p>
+            </div>
+
+            <div class="account__contents">
+                <div class="tab__content" id="dashboard">
+                    <h3 class="tab__header">Step Style </h3>
+
+                    <div class="tab__body">
+                        <p class="tab__description">
+                            Từ trang điều khiển tài khoản, bạn có thể dễ dàng kiểm tra và xem lại các đơn đặt hàng, quản
+                            lý việc giao hàng và địa chỉ thanh toán, và chỉnh sửa mật khẩu cũng như thông tin chi tiết
+                            về tài khoản của bạn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab__content " content id="orders">
+                    <h3 class="tab__header">Đơn đặt hàng của bạn</h3>
+
+                    <div class="tab__body">
+                        <table class="placed__order-table">
+                            <tr>
+                                <th> Đơn hàng </th>
+                                <th> Ngày </th>
+                                <th> Trạng thái đơn hàng </th>
+                                <th> Tổng giá trị đơn hàng </th>
+                                <th> Hoạt động </th>
+                            </tr>
+
+                            <tr>
+                                <td> 1357 </td>
+                                <td> 15/12/2023</td>
+                                <td> Đang vận chuyển </td>
+                                <td> 4.000.000đ</td>
+                                <td><a href="#" class="view__order"> Xem </a></td>
+                            </tr>
+
+                            <tr>
+                                <td> 23568 </td>
+                                <td> 20/11/2023 </td>
+                                <td> Hoàn thành </td>
+                                <td> 3.400.000</td>
+                                <td><a href="#" class="view__order"> Xem </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab__content" content id="update-profile">
+                    <h3 class="tab__header">Cập nhật thông tin</h3>
+
+                    <div class="tab__body">
+                        <form action=" " class="form-grid">
+                            <input type="text" placeholder="Tên đăng nhập" class="form__input">
+
+                            <div class="form__btn">
+                                <button class="btn btn--md"> Lưu </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab__content" content id="address">
+                    <h3 class="tab__header"> Địa chỉ giao hàng </h3>
+
+                    <div class="tab__body">
+                        <address class="address">
+                            279 Nguyễn Tri Phương <br />
+                            Phường 5 <br />
+                            Quận 10
+                        </address>
+                        <p class="city"> Thành phố Hồ Chí Minh</p>
+                        <a href="" class="edit"> Chỉnh sửa </a>
+                    </div>
+                </div>
+
+                <div class="tab__content" content id="change-password">
+                    <h3 class="tab__header">Thay đổi mật khẩu</h3>
+
+                    <div class="tab__body">
+                        <form action="#" class="form-grid">
+
+                            <input type="password" placeholder="Mật khẩu hiện tại" class="form__input" />
+
+                            <input type="password" placeholder="Mật khẩu mới" class="form__input" />
+
+                            <input type="password" placeholder="Nhắc lại mật khẩu" class="form__input" />
+
+                            <div class="form__btn">
+                                <button class="btn btn--md"> Lưu </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="indexx.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gắn link đến file JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tabs = document.querySelectorAll('.account__tab');
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    // Xóa lớp active khỏi tất cả các tab
+                    tabs.forEach(function (tab) {
+                        tab.classList.remove('active-tab');
+                    });
+
+                    // Thêm lớp active vào tab được nhấp
+                    this.classList.add('active-tab');
+
+                    // Ẩn tất cả nội dung tab
+                    var contents = document.querySelectorAll('.tab__content');
+                    contents.forEach(function (content) {
+                        content.style.display = 'none';
+                    });
+
+                    // Hiển thị nội dung tab tương ứng dựa trên tab được nhấp
+                    var targetTab = this.getAttribute('data-target');
+                    document.querySelector(targetTab).style.display = 'block';
+                });
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

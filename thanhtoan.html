@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- Phần Thanh toán  -->
+    <section class="thanhtoan">
+        <div class="containerthanhtoan">
+            <div class="giaohang-top-wrap">
+                <div class="giaohang-top">
+                    <!-- Icon cart -->
+                    <div class="thanhtoan-top-giaohang thanhtoan-top-item">
+                        <i class='bx bx-cart-alt'></i>
+                    </div>
+                    <!-- Icon địa chỉ -->
+                    <div class="thanhtoan-top-adress thanhtoan-top-item">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <!-- Icon thanh toán -->
+                    <div class="thanhtoan-top-payment thanhtoan-top-item">
+                        <i class='bx bx-credit-card'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-container">
+
+                <!-- Phần nhập mã khuyến mãi/voucher -->
+                <div class="form-group voucher-group">
+                    <label for="voucher">Mã khuyến mãi/voucher</label>
+                    <input type="text" id="voucher" name="voucher">
+                    <button type="button" id="applyVoucher">Áp dụng</button>
+                </div>
+
+                <!-- Phương thức thanh toán -->
+                <div class="form-group payment-method-group">
+                    <label>Phương thức thanh toán</label>
+
+                    <div class="payment-option">
+                        <input type="radio" id="cash" name="paymentMethod" value="cash"
+                            onclick="onChangePaymentMethod(this)" checked>
+                        <label for="cash">Thanh toán tiền mặt</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bankTransfer" name="paymentMethod" onclick="onChangePaymentMethod(this)"
+                            value="bankTransfer">
+                        <label for="bankTransfer">Chuyển khoản ngân hàng hoặc ví Momo</label>
+                    </div>
+
+                <!-- Phần thông tin chuyển khoản -->
+                <div id="external-payment" class="form-group payment-method-group" style="display: none;">
+                    <div style="margin-bottom: 6px;">
+                        <label for="bank-account">Ngân hàng và số tài khoản</label>
+                        <input type="text" id="bank-account" name="bank-account" readonly value=" Ngân hàng OCB - 0903058940">
+                    </div>
+                    <div style="margin-bottom: 6px;">
+                        <label for="bank-account-name">Tên tài khoản</label>
+                        <input type="text" id="bank-account-name" name="bank-account-name" readonly
+                            value="Nguyen Dao Nhu Anh">
+                    </div>
+                    <div>
+                        <label for="bank-account-content">Nội dung chuyển khoản</label>
+                        <input type="text" id="bank-account-content" name="bank-account-content" readonly
+                            value="Mã số đơn hàng: SS369">
+                    </div>
+                </div>
+
+                <!-- Tổng tiền hàng -->
+                <div class="form-group total-cost-group">
+                    <label>Tổng tiền hàng</label>
+                    <p><span id="total-cost"></span> đ</p>
+                </div>
+
+                <div class="form-actionsgiaohang">
+                    <a href="giaohang.html" class="return-to-payment">
+                        <i class='bx bx-arrow-back'></i> Quay lại trang giao hàng
+                    </a>
+                    <a href="dathangthanhcong.html">
+                        <button type="submit">Xác nhận</button>
+                    </a>
+                </div>
+                </form>
+            </div>
+
+    </section>
+
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+    <script src="./scripts/thanhtoan.js"></script>
+</body>
+
+</html>

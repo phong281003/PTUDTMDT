@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/sproduct.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a class="active" href="Shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!--ÁO HOODIE-->
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="imgtatcasanpham/sp19.png" width="100%" id="MainImg" alt="">
+            <!--Hình minh họa cho sản phẩm áo hoodie be-->
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="imgtatcasanpham/sp19.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgtatcasanpham/sp19.1.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgtatcasanpham/sp19.2.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgtatcasanpham/sp19.3.png" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Cửa hàng/ T-Hoodie</h6>
+            <h4>Terry Hoodie</h4>
+            <h2>1.250.000đ</h2>
+            <!--chọn thuộc tính-->
+            <select>
+                <option>Kích thước</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button class="normal">Thêm vào giỏ hàng</button>
+            <h5>Chi tiết sản phẩm</h5>
+            <span>
+                <pre>
+    - Xuất xứ: Hàn Quốc
+    - Ngày sản xuất: 15/12/2023
+    - Chất liệu: Bông cotton, nỉ
+
+    - Size S: dưới 55kg, Cao dưới 1m60
+    - Size M: từ 56 - 65kg , Cao 1m61 - 1m68
+    - Size L: từ 65- 75kg, Cao dưới 1m78
+
+    - Size S: Rộng 120cm, Dài 70cm
+    - Size M: Rộng 124cm, Dài 72cm
+    - Size L: Rộng 128cm, Dài 74cm
+
+    1. Điều kiện áp dụng đổi sản phẩm (trong vòng 07 ngày kể từ khi nhận sản phẩm) 
+    - Hàng hoá vẫn còn mới nguyên tem mác, chưa qua sử dụng.
+    - Lỗi do nhà sản xuất, đơn vị vận chuyển.
+    - Lỗi do Shop tư vấn sai về size
+    - Lỗi do Shop thiếu số lượng, mẫu mã
+                </pre>
+            </span>
+        </div>
+    </section>
+
+    <!-- Comment section -->
+    <section class="comment section container">
+        <div class="comment">
+            <h3>Bình luận</h3>
+            <input type="text" class="comment-input" placeholder="Viết bình luận của bạn...">
+            <button onclick="addComment()">Bình luận</button>
+        </div>
+
+        <!-- Mock comments -->
+        <div class="comments-list">
+            <div class="comment-item">
+                <strong>Người dùng 1:</strong> Đôi giày rất đẹp!
+            </div>
+            <div class="comment-item">
+                <strong>Người dùng 2:</strong> Mình đã mua sản phẩm này và rất hài lòng.
+            </div>
+            <!-- Add more mock comments as needed -->
+        </div>
+    </section>
+
+    <section class="products section container">
+        <h2 class="section-title">SẢN PHẨM TƯƠNG TỰ</h2>
+        <div class="khungsanphamnew">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img24.12/sp1.png" alt="sanpham8">
+                <img src="img24.12/sp1.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Crew-Neck Fleece Sweatshirt </h3>
+                <span> 2.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (189 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp13.png" alt="sanpham3">
+                <img src="imgtatcasanpham/sp13.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> Nike Sportswear Essential </h3>
+                <span> 1.460.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgtatcasanpham/sp14.png" alt="sanpham4">
+                <img src="imgtatcasanpham/sp14.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Dri-FIT One </h3>
+                <span> 1.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+    <script src="./scripts/sproduct.js"></script>
+</body>
+
+</html>

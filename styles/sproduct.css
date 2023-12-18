@@ -1,0 +1,32 @@
+.comment {
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+
+.comment-input {
+  width: 80%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.comment-input:focus {
+  border-color: #007bff;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  background-color: #f5f5f5;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+section.products {
+  margin-top: 32px;
+}

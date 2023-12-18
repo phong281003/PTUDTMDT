@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Shoes Store Website </title>
+    <!-- Corrected CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Boxicons CSS link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation header -->
+    <header>
+        <!-- Corrected class name for navigation container -->
+        <div class="nav container">
+            <!-- Menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i> <!-- Tạo thanh Menu ( Cái dấu 3 gạch ngang)-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Step<span>Style</span></a>
+            <!-- Corrected class name for navigation bar -->
+            <ul class="navbar">
+                <li><a href="#trangchu" class="active">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="sale.html"> Sale</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="trangtaikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+            <!-- Search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" id="" placeholder="Tìm kiếm tại đây...">
+            </div>
+            <!-- Thêm icon user và cart -->
+            <div class="nav-icons">
+                <a href="dangnhap.html" class="user"><i class='bx bxs-user'></i></a>
+                <a href="giohang.html" class="cart"><i class='bx bxs-cart'></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- Trang chủ -->
+    <section class="home" id="trangchu">
+        <div class="trangchu-text">
+            <h1> Nike Gamma Force </h1>
+            <h4> 3.500.000</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p> Sự kết hợp của phong cách <br> và thoải mái được kết hợp vào đôi giày Nike Gramma Force.</p>
+            </div>
+            <!-- Nút đặt hàng ngay -->
+            <a href="giohangsanphambanner.html" class="btn"> Đặt ngay </a>
+        </div>
+    </section>
+    <!-- Phần danh mục sản phẩm trang chủ -->
+    <section div class="danhmuc" id="danhmuc">
+        <div class="heading">
+            <span> DANH MỤC SẢN PHẨM </span>
+            <h2> Bước đi phong cách, cuộc sống năng động</h2>
+            <p> Step<span>Style</span> cung cấp đa dạng sản phẩm thể thao, từ quần áo đến giày dép và phụ kiện, đều chú
+                trọng vào sự thoải mái và phong cách</p>
+        </div>
+    </section>
+    <!-- Tạo box danh mục sản phẩm trên trang chủ -->
+    <div class="danhmuc-container container">
+        <!-- Box 1 -->
+        <div class="box">
+            <img src="img/danhmucdonam.png" alt="danhmucdonam">
+            <h2> Đồ Nam </h2>
+        </div>
+        <!-- Box 2 -->
+        <div class="box">
+            <img src="img/danhmucdonu.png" alt="danhmucdonu">
+            <h2> Đồ Nữ </h2>
+        </div>
+        <!-- Box 3 -->
+        <div class="box">
+            <img src="img/danhmucgiay.png" alt="danhmucgiay">
+            <h2> Giày Thể Thao </h2>
+        </div>
+        <!-- Box 4 -->
+        <div class="box">
+            <img src="img/danhmucphukien.png" alt="danhmucphukien">
+            <h2> Phụ Kiện </h2>
+        </div>
+        <!-- Box 5 -->
+        <div class="box">
+            <img src="img/danhmucnew.png" alt="danhmucnew">
+            <h2> New Arrivals </h2>
+        </div>
+        <!-- Box 6 -->
+        <div class="box">
+            <img src="img/danhmucsale.png" alt="danhmucsale">
+            <h2> Sales </h2>
+        </div>
+    </div>
+    <!-- PRODUCTS -->
+    <section class="products section container">
+        <div class="tab__btns">
+            <span class="tab__btn active-tab" data-target="#bestseller">BEST - SELLER</span>
+            <span class="tab__btn" data-target="#special">SPECIAL DEAL 24.12</span>
+            <span class="tab__btn" data-target="#upto">UP TO 50%</span>
+            <span class="tab__btn" data-target="#nike">Giữ ấm bạn bằng áo khoác Nike</span>
+        </div>
+        <!-- Best-seller -->
+        <div id="bestseller" class="khungsanpham active-content">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp1.png" alt="sanpham1">
+                <img src="imgsanphambestseller/sp1.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Terry Hoodie </h3>
+                <span>1.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (106 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="sproduct.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp2.png" alt="sanpham2">
+                <img src="imgsanphambestseller/sp2.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Nike Air Max 90 </h3>
+                <span> 3.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (30 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="sproduct2.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp3.png" alt="sanpham3">
+                <img src="imgsanphambestseller/sp3.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> LeBron T-Shirt </h3>
+                <span> 1.950.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp4.png" alt="sanpham4">
+                <img src="imgsanphambestseller/sp4.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Dunk Low SE </h3>
+                <span> 4.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp5.png" alt="sanpham5">
+                <img src="imgsanphambestseller/sp5.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Air Max Pulse Roam </h3>
+                <span> 4.255.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (46 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp6.png" alt="sanpham6">
+                <img src="imgsanphambestseller/sp6.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> Mini Backpack </h3>
+                <span> 2.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (45 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp7.png" alt="sanpham7">
+                <img src="imgsanphambestseller/sp7.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Sportswear Club Fleece </h3>
+                <span> 1.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (50 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp8.png" alt="sanpham8">
+                <img src="imgsanphambestseller/sp8.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Tie Dye Beanie </h3>
+                <span> 900.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="imgsanphambestseller/sp9.png" alt="sanpham9">
+                <img src="imgsanphambestseller/sp9.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Futura Wash Cap </h3>
+                <span> 1.000.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+        <!-- Special -->
+        <div id="special" class="khungsanpham" style="display: none;">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img24.12/sp1.png" alt="sanpham1">
+                <img src="img24.12/sp1.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Crew-Neck Fleece Sweatshirt </h3>
+                <span>2.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (169 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="chitietsanpham.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img24.12/sp2.png" alt="sanpham2">
+                <img src="img24.12/sp2.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Jordan Artist Series </h3>
+                <span> 1.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (365 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="img24.12/sp3.png" alt="sanpham3">
+                <img src="img24.12/sp3.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> Nike Air Swoosh Mock-Zip </h3>
+                <span> 1.750.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="img24.12/sp4.png" alt="sanpham4">
+                <img src="img24.12/sp4.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Air Max Koko </h3>
+                <span> 2.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="img24.12/sp5.png" alt="sanpham5">
+                <img src="img24.12/sp5.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Dri-FIT </h3>
+                <span> 1.255.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (46 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="img24.12/sp6.png" alt="sanpham6">
+                <img src="img24.12/sp6.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> Nike Dri-FIT Challenger </h3>
+                <span> 1.250.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (85 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="img24.12/sp7.png" alt="sanpham7">
+                <img src="img24.12/sp7.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Nike Utility </h3>
+                <span> 2.130.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (200 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="img24.12/sp8.png" alt="sanpham8">
+                <img src="img24.12/sp8.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Nike Alphafly 3 Proto </h3>
+                <span> 8.000.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (189 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="img24.12/sp9.png" alt="sanpham9">
+                <img src="img24.12/sp9.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Nike Court Vision Alta </h3>
+                <span> 2.850.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (169 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+        <!-- Upto -->
+        <div id="upto" class="khungsanpham" style="display: none;">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="imgupto50/sp1.png" alt="sanpham1">
+                <img src="imgupto50/sp1.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Fleece Skate Crew </h3>
+                <div class="price-container">
+                    <span class="new-price">1.800.000<span class="underline">đ</span></span>
+                    <span class="old-price">2.250.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (19 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="chitietsanpham.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="imgupto50/sp2.png" alt="sanpham2">
+                <img src="imgupto50/sp2.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Nike Air Force 1 LV8 </h3>
+                <div class="price-container">
+                    <span class="new-price">2.250.000<span class="underline">đ</span></span>
+                    <span class="old-price">5.800.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (30 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgupto50/sp3.png" alt="sanpham3">
+                <img src="imgupto50/sp3.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> Nike Air Max Plus III </h3>
+                <div class="price-container">
+                    <span class="new-price">2.250.000<span class="underline">đ</span></span>
+                    <span class="old-price">3.800.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="imgupto50/sp4.png" alt="sanpham4">
+                <img src="imgupto50/sp4.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Air More Uptempo </h3>
+                <div class="price-container">
+                    <span class="new-price">2.150.000<span class="underline">đ</span></span>
+                    <span class="old-price">3.780.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="imgupto50/sp5.png" alt="sanpham5">
+                <img src="imgupto50/sp5.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Go FlyEase </h3>
+                <div class="price-container">
+                    <span class="new-price">3.210.000<span class="underline">đ</span></span>
+                    <span class="old-price">4.800.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (38 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="imgupto50/sp6.png" alt="sanpham6">
+                <img src="imgupto50/sp6.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> Nike Court Dri-FIT Heritage </h3>
+                <div class="price-container">
+                    <span class="new-price">2.850.000<span class="underline">đ</span></span>
+                    <span class="old-price">3.750.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (45 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="imgupto50/sp7.png" alt="sanpham7">
+                <img src="imgupto50/sp7.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Nike Air Max 90</h3>
+                <div class="price-container">
+                    <span class="new-price">2.550.000<span class="underline">đ</span></span>
+                    <span class="old-price">3.890.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (50 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="imgupto50/sp8.png" alt="sanpham8">
+                <img src="imgupto50/sp8.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Nike Sportswear </h3>
+                <div class="price-container">
+                    <span class="new-price">2.950.000<span class="underline">đ</span></span>
+                    <span class="old-price">4.170.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="imgupto50/sp9.png" alt="sanpham9">
+                <img src="imgupto50/sp9.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Nike Indy Crop Top </h3>
+                <div class="price-container">
+                    <span class="new-price">2.220.000<span class="underline">đ</span></span>
+                    <span class="old-price">4.570.000<span class="underline">đ</span></span>
+                </div>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+        <!-- Nike -->
+        <div id="nike" class="khungsanpham" style="display: none;">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp1.png" alt="sanpham1">
+                <img src="imgaokhoacnike/sp1.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Full-Zip Hooded Training Jacket </h3>
+                <span>2.450.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (106 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="chitietsanpham.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp2.png" alt="sanpham2">
+                <img src="imgaokhoacnike/sp2.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Woven Basketball Jacket </h3>
+                <span> 2.500.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (30 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp3.png" alt="sanpham3">
+                <img src="imgaokhoacnike/sp3.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> Nike Sportswear Essential </h3>
+                <span> 1.460.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp4.png" alt="sanpham4">
+                <img src="imgaokhoacnike/sp4.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Dri-FIT One </h3>
+                <span> 1.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp5.png" alt="sanpham5">
+                <img src="imgaokhoacnike/sp5.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Sportswear </h3>
+                <span> 2.255.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (46 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp6.png" alt="sanpham6">
+                <img src="imgaokhoacnike/sp6.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> Puffer Jacket </h3>
+                <span> 2.280.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (45 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp7.png" alt="sanpham7">
+                <img src="imgaokhoacnike/sp7.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Nike Sportswear Windrunner </h3>
+                <span> 3.130.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (50 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp8.png" alt="sanpham8">
+                <img src="imgaokhoacnike/sp8.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Nike Sportswear Windrunner 1.0 </h3>
+                <span> 3.900.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="imgaokhoacnike/sp9.png" alt="sanpham9">
+                <img src="imgaokhoacnike/sp9.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Nike Tour Repel </h3>
+                <span> 2.200.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    <!-- Banner trước new arrivals -->
+    <section id="bannersale" class="section1">
+        <h2> Up to <span>80% Off</span> - Tất cả sản phẩm từ 24.12 đến 26.12 </h2>
+        <a href="sale.html">
+            <button class="normal">Đặt hàng ngay</button>
+        </a>
+    </section>
+    <section class="products section container">
+        <h2 class="section-title">SẢN PHẨM MỚI</h2>
+        <div class="khungsanphamnew">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="imgnew/sp1.png" alt="sanpham1">
+                <img src="imgnew/sp1.1.png" alt="sanpham1 hover" class="hover-img">
+                <h3> Nike Air Force 1 '07 </h3>
+                <span>2.750.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (106 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="chitietsanpham.html" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="imgnew/sp2.png" alt="sanpham2">
+                <img src="imgnew/sp2.1.png" alt="sanpham2 hover" class="hover-img">
+                <h3> Nike Air Force 1 LV8 </h3>
+                <span> 3.800.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (30 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="imgnew/sp3.png" alt="sanpham3">
+                <img src="imgnew/sp3.1.png" alt="sanpham3 hover" class="hover-img">
+                <h3> Nike Air Max Scorpion Flyknit </h3>
+                <span> 6.950.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (25 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="imgnew/sp4.png" alt="sanpham4">
+                <img src="imgnew/sp4.1.png" alt="sanpham4 hover" class="hover-img">
+                <h3> Nike Dri-FIT Swift UV </h3>
+                <span> 1.990.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (36 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="imgnew/sp5.png" alt="sanpham5">
+                <img src="imgnew/sp5.1.png" alt="sanpham5 hover" class="hover-img">
+                <h3> Nike Dri-FIT Swoosh Run </h3>
+                <span> 3.255.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (46 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="imgnew/sp6.png" alt="sanpham6">
+                <img src="imgnew/sp6.1.png" alt="sanpham6 hover" class="hover-img">
+                <h3> NNike Swoosh </h3>
+                <span> 2.550.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (45 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="imgnew/sp7.png" alt="sanpham7">
+                <img src="imgnew/sp7.1.png" alt="sanpham7 hover" class="hover-img">
+                <h3> Nike Air Flight Lite Mid </h3>
+                <span> 4.850.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (50 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="imgnew/sp8.png" alt="sanpham8">
+                <img src="imgnew/sp8.1.png" alt="sanpham8 hover" class="hover-img">
+                <h3> Nike Air Max 2017 </h3>
+                <span> 3.945.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn" id="addToCartBtn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="imgnew/sp9.png" alt="sanpham9">
+                <img src="imgnew/sp9.1.png" alt="sanpham9 hover" class="hover-img">
+                <h3> Nike Club </h3>
+                <span> 3.000.000<span class="underline">đ</span></span>
+                <i class='bx bxs-star'> (69 Đánh giá)</i>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="#" class="chitiet">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    <!-- Các banner khuyến mãi -->
+    <section id="bannerkhuyenmai" class="section-p1">
+        <!-- Box 1 -->
+        <div class="khungkhuyenmai"></div>
+        <div class="banner-box">
+            <h4>Coming Soon</h4>
+            <h2>NIKE ALPHAFLY 3</h2>
+            <span>Mang đến cho bạn sự thoải mái</span>
+            <button class="km">Xem ngay</button>
+        </div>
+        <!-- Box 2 -->
+        <div class="banner-box banner-box2">
+            <h4>Best deal</h4>
+            <h2>FREESHIP</h2>
+            <span>Freeship cho hóa đơn 3 triệu trở lên</span>
+            <a href="shop.html">
+                <button class="km">Đặt hàng ngay</button>
+            </a>
+        </div>
+    </section>
+    <!-- Đăng ký thành viên -->
+    <section id="dangkythanhvien" class="section-p1">
+        <div class="khungthanhvien"></div>
+        <div class="dangky">
+            <h4> Đăng ký thành viên </h4>
+            <p> Hãy nhập email đăng ký để nhận ngay <span>voucher 20%.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Nhập email tại đây...">
+            <button class="dangky"> Đăng ký </button>
+        </div>
+    </section>
+    <!-- Phần footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section about">
+                <h3>Step<span>Style</span></h3>
+                <p>Trang order hàng Nike chính hãng.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="lienhe.html">Về chúng tôi</a></li>
+                    <li><a href="shop.html">Đặt hàng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p><strong>Số điện thoại:</strong> 0903058940</p>
+                <p><strong>Địa chỉ:</strong> 1360 Huỳnh Tấn Phát, Quận 7</p>
+                <p><strong>Email:</strong> cskh@stepstyle.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi tại</h4>
+                <div class="social-icons">
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Gắn link đến file JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
